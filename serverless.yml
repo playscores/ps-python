@@ -1,0 +1,10 @@
+service: aws-python3
+frameworkVersion: "3"
+provider:
+  name: aws
+  runtime: python3.8
+  stage: dev
+  region: us-east-1
+functions:
+  hello:
+    handler: app/functions/hello.handler
